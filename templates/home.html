@@ -19,9 +19,16 @@
       <h1 class="text-center m-3">Kenny Career</h1>
         <img id="banner" class="img-fluid" src="static/banner.jpg" />
         <h2 class="text-center">About Kenny</h2>
+      <div class="row">
+        <div class="col-8">
         <p class="lead">Lorem ipsum dolor sit amet. Ut nulla necessitatibus sed alias omnis et dicta iusto At enim nostrum sit cumque fugiat id rerum obcaecati et labore totam? Et laudantium eveniet nam laborum ipsam sed cupiditate internos sed voluptas ipsa eum dolorum quibusdam.
     
     Ut quibusdam optio ut error molestias et labore sint qui rerum vero ab aliquam voluptatum! Sed quam maiores hic reprehenderit ratione qui quisquam animi. Ut unde nemo qui nihil quasi aut laboriosam blanditiis. Aut assumenda modi eos molestiae dolorem est omnis ducimus qui dolorum inventore At porro dolor non culpa deleniti ut consequuntur expedita.</p>
+        </div>
+        <div class="d-none d-md-block col-md-4">
+          <img src="static/workplace.jpg" height="220px" />
+        </div>
+      </div>
         <h2 class="text-center">Open Positions</h2>
         <div>
           {% for job in jobs %}
@@ -29,7 +36,7 @@
           {% endfor %}
         </div>
         <div class="text-center">
-          <button class="btn btn-primary btn-lg">Contact Us</button>
+          <a href="mailto:engr.omokehinde@gmail.com?subject=My Question" class="btn btn-primary btn-lg">Contact Us</a>
         </div>
     </div>
     {% include 'footer.html' %}
