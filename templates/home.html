@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-      #banner {
-        height: 360px;
-        width: 100%;
-        object-fit: cover;
-      }
-    </style>
-    <title>Kenny's Career</title>
+    {% include 'bootstrap.html' %}
+    {% include 'sitelogo.html' %}
+    <title>Inspire Career</title>
   </head>
   <body>
     {% include 'nav.html' %}
     <div class="container">
-      <h1 class="text-center m-3">Kenny Career</h1>
-        <img id="banner" class="img-fluid" src="static/banner.jpg" />
-        <h2 class="text-center">About Kenny</h2>
+      <h1 class="text-center m-3">Inspire Career</h1>
+      {% include 'banner.html' %}
+        <h2 class="text-center">About Inspire</h2>
       <div class="row">
         <div class="col-8">
         <p class="lead">Lorem ipsum dolor sit amet. Ut nulla necessitatibus sed alias omnis et dicta iusto At enim nostrum sit cumque fugiat id rerum obcaecati et labore totam? Et laudantium eveniet nam laborum ipsam sed cupiditate internos sed voluptas ipsa eum dolorum quibusdam.
