@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     {% include 'bootstrap.html' %}
+     {% include 'sitelogo.html' %}
+    <title>Application Submitted</title>
+  </head>
+  <body>
+     {% include 'nav.html' %}
+    <div class="container">
+      <h1 class="text-center m-3">Inspire Career</h1>
+      {% include 'banner.html' %}
+      <p>Your application has been successfully submitted.</p>
+      <b >Full Name</b>
+      <p class="mb-2">{{application['full_name']}}</p>
+  
+      <b >Email</b>
+      <p class="mb-2">{{application['email']}}</p>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
